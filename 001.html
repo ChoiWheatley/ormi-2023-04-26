@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Inline</title>
+    <style>
+        div,
+        span {
+            background: salmon;
+            border: 1px solid black;
+        }
+
+        span {
+            background: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    nyancat
+    <div>div는 </div>
+    <div>세로로</div>
+    <div>쌓입니다.</div>
+    <span>스판은</span><span>가로로</span><span>쌓입니다.</span>
+    <br>
+    <div>div는 Block요소입니다. 안에 인라인 요소인 <span>span 을 작성할 수 있답니다.</span></div>
+    <!-- ERROR -->
+    <span>span은 Inline 요소입니다. 안에 <div>Block 요소를 넣을 수 없습니다.</div> </span>
+    <!-- //ERROR -->
+    <br>
+    <a>하지만 Inline요소 중 `a` 태그 안에 예외적으로 <div>Block 요소를 넣을 수 있습니다.</div></a>
+</body>
+
+</html>
